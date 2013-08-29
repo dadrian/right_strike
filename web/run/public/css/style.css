@@ -1,0 +1,187 @@
+body {
+  width: 100%;
+  padding: 0 0;
+  background-image: url('/img/bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, td {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  text-decoration: left;
+  color: #05316D; 
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: right;
+}
+#chart-bg {
+  text-align: center;
+}
+.button h3 {
+  text-align: left;
+}
+
+header {
+  width: 100%;  
+  position: fixed;
+}
+
+#header-bg {
+  position: relative;
+  height: 110px;
+  background-color: #FFF;
+  border-bottom: solid 5px #05316D;
+  margin-top: -115px;
+  opacity:.95;
+}
+
+#header-wrapper {
+  width: 1200px;
+  position: relative;
+  z-index: 1000;
+  margin: 0 auto;
+  margin-top: -90px;
+}
+
+#header-wrapper img {
+    position: relative;
+    float: left;
+    margin: auto auto;
+    width: 130px;
+    height: 80px;
+}
+.chart h1{ text-align: center;}
+  
+h2 {
+  text-align: right;
+}
+
+h4{text-align: center;}
+
+#subtitle {
+  width: 600px;
+}
+
+#subtitle h2 {
+  margin: 0 0;
+  margin-top: 35px;
+  vertical-align: bottom;
+  color: #05316D ;
+}
+
+#sidetab a {
+
+}
+
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+#sidetab {
+  height: 80px;
+  margin-left: 0;
+  width: 100px;
+
+}
+
+#sidetab h3 {
+  width: 60px;
+  padding-left: 5px;
+}
+
+#two {
+  margin-left: 0;
+  border-bottom: solid 3px #05316D;
+}
+
+#two h3 {
+  text-align: left;
+}
+
+a.under {
+  text-decoration: underline;
+}
+
+#right h3 {
+  text-align: center;
+}
+
+#right {
+  text-align: center;
+  float: right;
+  width: 1080px; 
+  height: 80px;
+  background-color: #FFF;
+  margin-left: 0;
+}
+
+#calendar td {
+  width:;
+}
+
+#calendar td:hover{
+  background-color: #ffb740;
+}
+  
+#stats {
+
+} 
+
+#calendar {
+  float: right;
+  height: 80px;
+  width: 1080px;
+  text-align: center;
+  background-color: #FFF;
+}
+
+button#statsBtn {
+  text-align: left;
+  padding: 0 10px;
+  width: 120px;
+  background-color: #FFF;
+  border-style: none;
+  color: #FFF;
+}
+
+button#calendarBtn {
+  text-align: left;
+  padding: 0 10px;
+  width: 120px;
+  background-color: #FFF;
+  border-style: none;
+  color: #FFF;
+}
+
+#stats {
+  float: right;
+  margin: auto auto;
+  text-align: center;
+  width: 1080px;
+  height: 80px;
+  background-color: #FFF;
+}
+
+.chart {
+  margin-top: -500px;
+}
+
+#chart-bg {
+  margin-top: -85px;
+  position: relative;
+  z-index: -1;
+  width: inherit;
+  height: 600px;
+  background-color: #FFF;
+  box-shadow: 0 0 0 3px #05316D;
+}

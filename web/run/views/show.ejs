@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RightStrike</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<link href='http://fonts.googleapis.com/css?family=Fresca' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script type="/js/bootstrap.min.js"></script>
+    <script src='/js/jquery.js'></script>
+    <script src='/js/chart.js'></script>
+    <script src='/js/graph.js'></script>
+    <script src="//connect.facebook.net/en_US/all.js"></script>
+<div id="fb-root"></div>
+<script>
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'YOUR_APP_ID', // App ID
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional init code here
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+    <header>
+      <div id="header-bg"></div>
+      <div id="header-wrapper">
+        <div class="span6" style="margin-left: 0;">
+          <a href="#"><img src="/img/logo.png"></a>
+        </div>
+        <div id="subtitle" class="span6"><h2>Don't hurt your fucking legs n shit</h2></div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="row" id="two">
+        <div id="sidetab" class="span3" >
+          <button id="statsBtn"><h3>Stats</h3></button>
+          <button id="calendarBtn"><h3>Calender</h3></button>
+        </div>
+        <div class="span9" id="right">
+          <table id="stats">
+            <tr>
+              <td>
+                Average Ratio
+              </td>
+              <td>
+                Best
+              </td>
+              <td>
+                Worst
+              </td>
+            </tr>
+            <tr>
+              <td>
+                AVG%
+              </td>
+              <td>
+                BEST%
+              </td>
+              <td>
+                WORST%
+              </td>
+            </tr>    
+          </table>      
+        <table id="calendar">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
+<td>30</td>
+<td>31</td>
+</tr>
+<tr>
+<td>fri</td>
+<td>sat</td>
+<td>sun</td>
+<td>mon</td>
+<td>tue</td>
+<td>mon</td>
+<td>tue</td>
+<td>wed</td>
+<td>thur</td>
+<td>fri</td>
+<td>sat</td>
+<td>sun</td>
+<td>mon</td>
+<td>tue</td>
+<td>wed</td>
+<td>thur</td>
+<td>fri</td>
+<td>sat</td>
+<td>sun</td>
+<td>mon</td>
+<td>tue</td>
+<td>wed</td>
+<td>thur</td>
+<td>fri</td>
+<td>sat</td>
+<td>sun</td>
+<td>mon</td>
+<td>tue</td>
+<td>wed</td>
+<td>thur</td>
+<td>fri</td>
+</tr>
+</table>
+        </div>
+      </div>
+      <div id="chart-bg"></div>
+      <div class="chart" class="span12">
+            <h1>Foot strike data for <%= itembob.date %></h1>
+    <canvas id="The_Chart" width="1200" height="400"></canvas>  
+  <script>
+  $(document).ready(function() {
+    build_graph();
+    $('#stats').toggle(true);
+    $('#calendar').toggle(false);
+    $('#calendarBtn').click(function() {
+      $('#calendar').show();
+      $('#stats').hide();
+    });
+    $('#statsBtn').click(function() {
+      $('#calendar').hide();
+      $('#stats').show();
+    });
+  });
+  </script>
+        <h4>Time</h4>
+      </div>
+
+    </div>
+  </body>
+</html>

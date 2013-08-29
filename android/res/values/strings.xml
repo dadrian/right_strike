@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Right Strike</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Run</string>
+    <string name="title_section2">Logs</string>
+    <string name="title_section3">Settings</string>
+    <string name="error_bluetooth_disabled">Could not access Bluetooth device, is it disabled in phone settings?</string>
+    <string name="bluetooth_address">0:06:66:09:85:09</string>
+    <string name="button_start_log">Start Run!</string>
+    <string name="button_end_log">Finish Run!</string>
+    <string name="log_status_default">Not currently logging.</string>
+    <string name="log_status_running">Currently logging a run</string>
+    <string name="log_status_stopped">Not currently logging a run</string>
+
+</resources>
