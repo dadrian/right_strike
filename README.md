@@ -1,6 +1,4 @@
 Angelhack 2013
 ==============
 
-Adam's shoe thing
-
-Someone edit this document to make it cooler if you feel like it
+A hardware device + mobile application for maintaing good form while running, using an Arduino + Bluetooth + Android + node.js
